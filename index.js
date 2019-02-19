@@ -16,6 +16,8 @@ server.listen(8080,()=>{
 
 // Server/App connection
 
+var numUsers = 0;
+
 io.on('connection', (socket) => {
 
   var addedUser = false;
